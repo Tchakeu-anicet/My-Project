@@ -1,0 +1,128 @@
+.post-gig-page {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.post-gig-header {
+  margin-bottom: 28px;
+}
+
+.post-gig-header > span {
+  color: #1677ff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.post-gig-header h2 {
+  margin: 8px 0;
+  color: #101318;
+  font-size: clamp(30px, 5vw, 46px);
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+
+.post-gig-header p {
+  margin: 0;
+  color: #737b88;
+  line-height: 1.7;
+}
+
+.post-gig-form {
+  background: white;
+  border: 1px solid #e4e8ee;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 14px 40px rgba(16, 19, 24, 0.07);
+}
+
+.post-gig-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #303640;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.post-gig-form input,
+.post-gig-form textarea,
+.post-gig-form select {
+  width: 100%;
+  border: 1px solid #dce1e8;
+  background: #fafbfd;
+  border-radius: 10px;
+  padding: 13px 14px;
+  color: #20252d;
+  font: inherit;
+  outline: none;
+  transition: 0.2s;
+}
+
+.post-gig-form textarea {
+  resize: vertical;
+}
+
+.post-gig-form input:focus,
+.post-gig-form textarea:focus,
+.post-gig-form select:focus {
+  border-color: #1677ff;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.1);
+}
+
+.post-gig-form > label {
+  margin-bottom: 20px;
+}
+
+.post-gig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.post-gig-error,
+.post-gig-success {
+  padding: 12px 14px;
+  border-radius: 9px;
+  margin: 20px 0 0;
+  font-size: 13px;
+}
+
+.post-gig-error {
+  color: #b4232b;
+  background: #fff1f2;
+}
+
+.post-gig-success {
+  color: #087443;
+  background: #edfff6;
+}
+
+.post-gig-submit {
+  width: 100%;
+  border: 0;
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #1677ff;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.post-gig-submit:hover {
+  background: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 700px) {
+  .post-gig-form {
+    padding: 20px;
+  }
+
+  .post-gig-grid {
+    grid-template-columns: 1fr;
+  }
+}

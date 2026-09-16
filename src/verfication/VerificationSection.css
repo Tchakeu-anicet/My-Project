@@ -1,0 +1,150 @@
+.verification-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.verification-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px;
+  border-radius: 25px;
+  background:
+    linear-gradient(
+      135deg,
+      #07111f,
+      #172d4d
+    );
+  color: white;
+}
+
+.verification-hero > div:first-child > span {
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .18em;
+}
+
+.verification-hero h2 {
+  font-size: 32px;
+  margin: 9px 0;
+}
+
+.verification-hero p {
+  color: #cbd5e1;
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+.verification-score {
+  width: 110px;
+  height: 110px;
+  flex: 0 0 110px;
+  border: 8px solid
+    rgba(255,255,255,.12);
+  border-top-color: #60a5fa;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.verification-score strong,
+.verification-score span {
+  display: block;
+  text-align: center;
+}
+
+.verification-score strong {
+  font-size: 25px;
+}
+
+.verification-score span {
+  font-size: 10px;
+  color: #cbd5e1;
+}
+
+.verification-list {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.verification-list article {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 17px;
+}
+
+.verification-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.verification-list h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.verification-list p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.verification-list strong {
+  color: #16a34a;
+  font-size: 12px;
+}
+
+.verification-button {
+  width: 100%;
+  margin-top: 18px;
+  min-height: 52px;
+  border: 0;
+  border-radius: 14px;
+  background: #2563eb;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.verification-button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.verification-complete {
+  margin-top: 18px;
+  padding: 17px;
+  border-radius: 14px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .verification-hero {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .verification-list article {
+    grid-template-columns: 44px 1fr;
+  }
+
+  .verification-list article > strong {
+    grid-column: 2;
+  }
+}

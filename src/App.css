@@ -1,0 +1,288 @@
+@import "./dashboard/DashboardSection.css";
+@import "./jobs/JobsSection.css";
+@import "./saved/SavedJobsSection.css";
+@import "./applications/ApplicationsSection.css";
+@import "./candidates/CandidatesSection.css";
+@import "./post-job/PostJobSection.css";
+@import "./profile/ProfileSection.css";
+@import "./settings/SettingsSection.css";
+@import "./notifications/NotificationsSection.css";
+
+:root {
+  --jf-blue: #3156d8;
+  --jf-bg: #f6f8fc;
+  --jf-text: #17202a;
+  --jf-muted: #788391;
+  --jf-border: #e4e8ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.jf-app-shell {
+  min-height: 100vh;
+  background: var(--jf-bg);
+  color: var(--jf-text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.jf-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 245px;
+  padding: 27px 18px 20px;
+  background: linear-gradient(180deg, #3659d3, #2f50c7);
+  color: #fff;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.jf-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 7px 25px;
+}
+
+.jf-brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #101920;
+  color: #3156d8;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.jf-brand-name {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.jf-role {
+  padding: 11px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 10px;
+}
+
+.jf-sidebar-nav {
+  display: grid;
+  gap: 5px;
+}
+
+.jf-nav-btn {
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.78);
+  border-radius: 9px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.jf-nav-btn:hover,
+.jf-nav-btn.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.jf-logout {
+  margin-top: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: #fff;
+  border-radius: 9px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.jf-main {
+  margin-left: 245px;
+  min-height: 100vh;
+}
+
+.jf-topbar {
+  height: 82px;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--jf-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.jf-page-title span {
+  font-size: 8px;
+  color: #9aa2ad;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.jf-page-title h1 {
+  margin: 4px 0 0;
+  font-size: 22px;
+}
+
+.jf-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.jf-dashboard-search {
+  width: 240px;
+  height: 38px;
+  border: 1px solid #dfe4eb;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 11px;
+  gap: 7px;
+}
+
+.jf-dashboard-search input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font: inherit;
+  font-size: 10px;
+}
+
+.jf-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.jf-user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: var(--jf-blue);
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.jf-user-info {
+  display: grid;
+  gap: 2px;
+}
+
+.jf-user-info strong {
+  font-size: 10px;
+}
+
+.jf-user-info span {
+  font-size: 8px;
+  color: #9aa2ad;
+}
+
+.jf-content {
+  max-width: 1450px;
+  padding: 30px 34px 55px;
+  margin: auto;
+}
+
+.jf-mobile-toggle {
+  display: none;
+  border: 1px solid var(--jf-border);
+  background: #fff;
+  border-radius: 8px;
+  width: 39px;
+  height: 39px;
+}
+
+.jf-overlay {
+  display: none;
+}
+
+
+
+html[data-theme='light'] .jf-role {
+  background: #edf4ff !important;
+  color: #1d4ed8 !important;
+}
+
+html[data-theme='light'] .jf-nav-btn {
+  background: transparent !important;
+  color: #475569 !important;
+}
+
+html[data-theme='light'] .jf-nav-btn:hover,
+html[data-theme='light'] .jf-nav-btn.active {
+  background: #edf4ff !important;
+  color: #1d4ed8 !important;
+}
+
+html[data-theme='light'] .jf-logout {
+  background: #ffffff !important;
+  border: 1px solid #fecaca !important;
+  color: #dc2626 !important;
+}
+
+@media (max-width: 850px) {
+  .jf-sidebar {
+    transform: translateX(-102%);
+    transition: 0.25s;
+  }
+
+  .jf-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .jf-main {
+    margin-left: 0;
+  }
+
+  .jf-mobile-toggle {
+    display: block;
+  }
+
+  .jf-overlay.open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 18, 30, 0.4);
+    z-index: 90;
+  }
+
+  .jf-dashboard-search {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .jf-topbar {
+    padding: 0 15px;
+    height: 70px;
+  }
+
+  .jf-content {
+    padding: 22px 15px 40px;
+  }
+
+  .jf-user-info {
+    display: none;
+  }
+
+  .jf-page-title h1 {
+    font-size: 18px;
+  }
+}
+

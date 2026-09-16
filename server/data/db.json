@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "id": "user-admin-001",
+      "fullName": "System Admin",
+      "email": "admin@jobfind.com",
+      "password": "admin123",
+      "gender": "Male",
+      "phone": "+237600000000",
+      "city": "Douala",
+      "role": "admin",
+      "accountStatus": "ACTIVE",
+      "isPremium": true,
+      "emailVerified": true,
+      "seekerProfile": {
+        "enabled": true,
+        "completed": false,
+        "jobCategories": [],
+        "workTypes": [],
+        "customJobCategories": []
+      },
+      "recruiterProfile": {
+        "enabled": false,
+        "completed": false,
+        "workerCategories": [],
+        "customWorkerCategories": [],
+        "verificationStatus": "not_started"
+      },
+      "adminProfile": {
+        "adminID": "ADM-001",
+        "department": "Platform Operations",
+        "permissions": [
+          "MANAGE_USERS",
+          "MANAGE_JOBS",
+          "MANAGE_REPORTS",
+          "MONITOR_PLATFORM"
+        ]
+      },
+      "workplace": {
+        "id": "workplace-admin",
+        "type": "admin",
+        "name": "Admin Control Center",
+        "description": "Platform management & analytics",
+        "createdAt": "2026-09-12T05:32:22.172Z",
+        "active": true
+      },
+      "onboardingCompleted": true,
+      "createdAt": "2026-09-12T05:32:22.173Z",
+      "updatedAt": "2026-09-12T05:32:22.173Z"
+    },
+    {
+      "id": "c2a209ff-3660-4174-8877-816c9b7daec5",
+      "fullName": "Anicet",
+      "email": "weqsrtywuidw@gmail.com",
+      "password": "Anicet+14",
+      "gender": "Male",
+      "phone": "",
+      "city": "Douala",
+      "role": "seeker",
+      "accountStatus": "ACTIVE",
+      "isPremium": false,
+      "emailVerified": false,
+      "seekerProfile": {
+        "enabled": true,
+        "completed": false,
+        "jobCategories": [],
+        "workTypes": [],
+        "customJobCategories": []
+      },
+      "recruiterProfile": {
+        "enabled": false,
+        "completed": false,
+        "workerCategories": [],
+        "customWorkerCategories": [],
+        "verificationStatus": "not_started"
+      },
+      "onboardingCompleted": false,
+      "createdAt": "2026-09-14T09:21:32.149Z",
+      "updatedAt": "2026-09-14T09:21:32.149Z"
+    },
+    {
+      "id": "2f01f437-b1eb-4585-bd4e-23050e3c429d",
+      "fullName": "tecina",
+      "email": "qwertyui@gmail.com",
+      "password": "45KpsrWgzc2BQhy",
+      "gender": "Female",
+      "phone": "",
+      "city": "Douala",
+      "role": "seeker",
+      "accountStatus": "ACTIVE",
+      "isPremium": false,
+      "emailVerified": false,
+      "seekerProfile": {
+        "enabled": true,
+        "completed": false,
+        "jobCategories": [],
+        "workTypes": [],
+        "customJobCategories": []
+      },
+      "recruiterProfile": {
+        "enabled": false,
+        "completed": false,
+        "workerCategories": [],
+        "customWorkerCategories": [],
+        "verificationStatus": "not_started"
+      },
+      "onboardingCompleted": false,
+      "createdAt": "2026-09-15T01:35:20.024Z",
+      "updatedAt": "2026-09-15T01:35:20.024Z"
+    },
+    {
+      "id": "f87841e0-b901-4b00-af23-66f5b27528e0",
+      "fullName": "Wassuo",
+      "email": "wassoudavid@gmail.com",
+      "password": "Anicet+14",
+      "gender": "Male",
+      "phone": "",
+      "city": "Douala",
+      "role": "seeker",
+      "accountStatus": "ACTIVE",
+      "isPremium": false,
+      "emailVerified": false,
+      "seekerProfile": {
+        "enabled": true,
+        "completed": false,
+        "jobCategories": [],
+        "workTypes": [],
+        "customJobCategories": []
+      },
+      "recruiterProfile": {
+        "enabled": false,
+        "completed": false,
+        "workerCategories": [],
+        "customWorkerCategories": [],
+        "verificationStatus": "not_started"
+      },
+      "onboardingCompleted": false,
+      "createdAt": "2026-09-15T06:42:03.106Z",
+      "updatedAt": "2026-09-15T06:42:03.106Z"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job-001",
+      "jobTitle": "Senior Frontend Developer",
+      "companyName": "JobFind Labs",
+      "location": "Douala",
+      "description": "Build modern user interfaces for recruitment and job discovery experiences.",
+      "salary": 320000,
+      "status": "OPEN",
+      "createdAt": "2026-09-12T05:32:22.173Z",
+      "employmentType": "Full-time",
+      "deadline": "2026-10-12T05:32:22.173Z",
+      "requirements": "React, TypeScript, UI design, teamwork",
+      "recruiterId": "user-admin-001",
+      "category": "Technology",
+      "featured": true
+    },
+    {
+      "id": "job-002",
+      "jobTitle": "Community Outreach Assistant",
+      "companyName": "CivicWorks",
+      "location": "Yaoundé",
+      "description": "Support community engagement and assist with outreach campaigns for social services.",
+      "salary": 160000,
+      "status": "OPEN",
+      "createdAt": "2026-09-12T05:32:22.173Z",
+      "employmentType": "Contract",
+      "deadline": "2026-10-02T05:32:22.173Z",
+      "requirements": "Strong communication, field outreach, reporting",
+      "recruiterId": "user-admin-001",
+      "category": "Community & Social",
+      "featured": false
+    },
+    {
+      "id": "job-003",
+      "jobTitle": "Household Caregiver",
+      "companyName": "Private Family Household",
+      "location": "Bafoussam",
+      "description": "Provide practical support to a household with daily care, organization and companionship.",
+      "salary": 120000,
+      "status": "OPEN",
+      "createdAt": "2026-09-12T05:32:22.174Z",
+      "employmentType": "Part-time",
+      "deadline": "2026-09-27T05:32:22.174Z",
+      "requirements": "Empathy, reliability, household support experience",
+      "recruiterId": "user-admin-001",
+      "category": "Household Services",
+      "featured": false
+    }
+  ],
+  "applications": [],
+  "savedJobs": [],
+  "notifications": [],
+  "messages": [],
+  "reports": [],
+  "reviews": [],
+  "bookings": []
+}

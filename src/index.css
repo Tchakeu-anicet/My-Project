@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body.theme-light {
+  background: var(--jf-bg);
+  color: var(--jf-text);
+}
+
+body.theme-dark {
+  background: var(--jf-bg);
+  color: var(--jf-text);
+}
+
+:root {
+  --jf-blue: #3156d8;
+  --jf-blue-dark: #183fa6;
+  --jf-bg: #f6f8fc;
+  --jf-text: #17202a;
+  --jf-muted: #788391;
+  --jf-border: #e4e8ee;
+  --jf-white: #ffffff;
+  --jf-card: #ffffff;
+  --jf-panel: #f8fafd;
+}
+
+html[data-theme='light'] {
+  --jf-blue: #3156d8;
+  --jf-blue-dark: #183fa6;
+  --jf-bg: #f6f8fc;
+  --jf-text: #17202a;
+  --jf-muted: #788391;
+  --jf-border: #e4e8ee;
+  --jf-white: #ffffff;
+  --jf-card: #ffffff;
+  --jf-panel: #f8fafd;
+}
+
+html, body {
+  background: var(--jf-bg);
+  color: var(--jf-text);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-theme='dark'] {
+  --jf-blue: #79a7ff;
+  --jf-blue-dark: #a9c3ff;
+  --jf-bg: #0b1120;
+  --jf-text: #edf4ff;
+  --jf-muted: #a9b6cf;
+  --jf-border: #2d3d5a;
+  --jf-white: #121b2d;
+  --jf-card: #18253d;
+  --jf-panel: #1d2d45;
+}
+
+body.theme-light,
+body.theme-dark {
+  background: var(--jf-bg);
+  color: var(--jf-text);
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+}
+

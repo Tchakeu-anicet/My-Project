@@ -1,0 +1,255 @@
+.recruiter-onboarding {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.12),
+      transparent 35%
+    ),
+    #f6f8fc;
+}
+
+.recruiter-onboarding-card {
+  width: min(850px, 100%);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 38px;
+  box-shadow:
+    0 25px 70px rgba(15, 23, 42, 0.12);
+}
+
+.recruiter-onboarding-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.recruiter-onboarding-brand span {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.recruiter-onboarding-brand strong {
+  font-size: 25px;
+  color: #111827;
+}
+
+.recruiter-onboarding-brand b {
+  color: #2563eb;
+}
+
+.recruiter-progress {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.recruiter-progress-fill {
+  height: 100%;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.recruiter-step {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.recruiter-heading {
+  margin: 28px 0;
+}
+
+.recruiter-heading > span {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.recruiter-heading h1 {
+  margin: 10px 0;
+  color: #0f172a;
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.1;
+}
+
+.recruiter-heading p,
+.recruiter-question p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.recruiter-question h2 {
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.recruiter-options {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.recruiter-options button,
+.recruiter-context-grid button {
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #111827;
+}
+
+.recruiter-options button:hover,
+.recruiter-context-grid button:hover {
+  border-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.recruiter-options button.selected,
+.recruiter-context-grid button.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+  box-shadow:
+    0 0 0 3px
+    rgba(37, 99, 235, 0.08);
+}
+
+.recruiter-options strong,
+.recruiter-options span {
+  display: block;
+}
+
+.recruiter-options strong {
+  margin-bottom: 6px;
+}
+
+.recruiter-options span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.recruiter-context-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.recruiter-question textarea {
+  width: 100%;
+  margin-top: 18px;
+  resize: vertical;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  padding: 14px;
+  font: inherit;
+  outline: none;
+}
+
+.recruiter-question textarea:focus {
+  border-color: #2563eb;
+}
+
+.job-type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.job-type-grid label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.job-type-grid label.checked {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.job-type-grid input {
+  accent-color: #2563eb;
+}
+
+.recruiter-error {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.recruiter-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.recruiter-actions button {
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.recruiter-actions .primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.recruiter-actions .secondary {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.recruiter-user {
+  text-align: center;
+  margin-top: 24px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .recruiter-onboarding-card {
+    padding: 24px 18px;
+  }
+
+  .recruiter-context-grid,
+  .job-type-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruiter-actions {
+    flex-direction: column-reverse;
+  }
+
+  .recruiter-actions button {
+    width: 100%;
+  }
+}

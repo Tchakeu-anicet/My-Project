@@ -1,0 +1,107 @@
+.jf-gate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(10, 14, 20, 0.72);
+  backdrop-filter: blur(8px);
+  overflow-y: auto;
+}
+
+.jf-gate-modal {
+  width: min(510px, 100%);
+  max-height: 95vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 30px;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+
+.jf-gate-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f3f6;
+  color: #555d68;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.jf-gate-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.jf-gate-logo {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #1677ff;
+  color: white;
+  font-weight: 900;
+}
+
+.jf-gate-brand strong {
+  color: #1677ff;
+}
+
+.jf-gate-brand b {
+  color: #101318;
+}
+
+.jf-gate-header {
+  margin-bottom: 22px;
+}
+
+.jf-gate-kicker {
+  color: #1677ff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.jf-gate-header h2 {
+  margin: 7px 0;
+  color: #101318;
+  font-size: 29px;
+  letter-spacing: -1px;
+}
+
+.jf-gate-header p {
+  margin: 0;
+  color: #737b88;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.jf-gate-footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e8ebef;
+  text-align: center;
+}
+
+.jf-gate-footer span {
+  color: #8a919c;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+  .jf-gate-modal {
+    padding: 22px;
+    border-radius: 16px;
+  }
+}

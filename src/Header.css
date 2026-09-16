@@ -1,0 +1,413 @@
+/* =========================================
+   JOBFIND HEADER
+========================================= */
+
+.jf-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.jf-header-inner {
+  width: 100%;
+  min-height: 82px;
+  margin: 0;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.jf-left-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.jf-logo {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  left: -5;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.07em;
+
+  font-family: inherit;
+}
+
+.jf-logo-btn {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.jf-logo-btn:hover {
+  transform: translateY(-1px);
+}
+
+.logo-job {
+  color: #1688e8;
+}
+
+.logo-find {
+  color: black;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.jf-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 28px;
+  flex-wrap: nowrap;
+}
+
+.jf-nav-link {
+  position: relative;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  padding: 8px 0;
+
+  color: rgba(15, 23, 42, 0.88);
+
+  font-family: inherit;
+  font-size: 0.91rem;
+  font-weight: 650;
+
+  cursor: pointer;
+  opacity: 1;
+  filter: none;
+  text-shadow: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.jf-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+
+  height: 2px;
+  border-radius: 10px;
+
+  background: #1688e8;
+
+  transition: right 0.25s ease;
+}
+
+.jf-nav-link:hover {
+  color: #0f172a;
+  transform: translateY(-1px);
+  filter: none;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.jf-nav-link:hover::after {
+  right: 0;
+}
+
+/* =========================================
+   RIGHT ACTIONS
+========================================= */
+
+.jf-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.jf-icon-btn {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  border: none;
+  background: transparent;
+
+  color: #0f172a;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.jf-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.jf-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.jf-search-input {
+  position: absolute;
+  top: 52px;
+  right: 0;
+
+  width: 260px;
+  height: 44px;
+
+  padding: 0 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+
+  outline: none;
+
+  background: rgba(10, 20, 28, 0.96);
+  color: #ffffff;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+  font-family: inherit;
+}
+
+.jf-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* =========================================
+   AUTH
+========================================= */
+
+.jf-auth-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.jf-login-link {
+  border: none;
+  background: transparent;
+
+  padding: 10px 14px;
+
+  color: #0f172a;
+
+  font-family: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.jf-signup-btn {
+  border: none;
+
+  padding: 11px 20px;
+
+  border-radius: 999px;
+
+  background: #1688e8;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(22, 136, 232, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.jf-signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(22, 136, 232, 0.35);
+}
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.jf-profile-wrap {
+  position: relative;
+}
+
+.jf-dropdown {
+  position: absolute;
+  top: 52px;
+  right: 0;
+
+  min-width: 160px;
+
+  padding: 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+
+  background: rgba(10, 20, 28, 0.97);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.jf-dropdown-btn {
+  width: 100%;
+
+  border: none;
+  border-radius: 9px;
+
+  background: transparent;
+  color: #ffffff;
+
+  padding: 11px 12px;
+
+  text-align: left;
+
+  font-family: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.jf-dropdown-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.jf-menu-btn {
+  display: none;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+  .jf-left-group {
+    gap: 25px;
+  }
+
+  .jf-nav {
+    gap: 18px;
+  }
+
+  .jf-nav-link {
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .jf-header-inner {
+    min-height: 72px;
+  }
+
+  .jf-nav {
+    position: fixed;
+    top: 72px;
+    left: 14px;
+    right: 14px;
+
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 12px;
+
+    border-radius: 18px;
+
+    background: rgba(8, 16, 24, 0.97);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  }
+
+  .jf-nav.jf-nav-open {
+    display: flex;
+  }
+
+  .jf-nav-link {
+    width: 100%;
+    padding: 13px 14px;
+
+    text-align: left;
+  }
+
+  .jf-nav-link::after {
+    display: none;
+  }
+
+  .jf-menu-btn {
+    display: grid;
+  }
+
+  .jf-search-wrap {
+    display: none;
+  }
+
+  .jf-auth-links {
+    gap: 5px;
+  }
+
+  .jf-login-link {
+    padding: 8px;
+  }
+
+  .jf-signup-btn {
+    padding: 9px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jf-header-inner {
+    width: calc(100% - 28px);
+  }
+
+  .jf-logo {
+    font-size: 1.7rem;
+  }
+
+  .jf-login-link {
+    display: none;
+  }
+
+  .jf-signup-btn {
+    font-size: 0.82rem;
+  }
+}

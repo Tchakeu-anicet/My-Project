@@ -1,0 +1,192 @@
+.af-form {
+  width: 100%;
+}
+
+.af-account-concept {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 22px;
+  background: #f2f7ff;
+  border: 1px solid #dceaff;
+  border-radius: 12px;
+}
+
+.af-account-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #1677ff;
+  color: white;
+}
+
+.af-account-concept strong,
+.af-account-concept span {
+  display: block;
+}
+
+.af-account-concept strong {
+  color: #20252d;
+  font-size: 13px;
+}
+
+.af-account-concept span {
+  margin-top: 4px;
+  color: #737b88;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.af-label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 16px;
+  color: #303640;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.af-label input,
+.af-label select {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #dce1e8;
+  border-radius: 9px;
+  background: #fafbfd;
+  color: #20252d;
+  outline: none;
+  font: inherit;
+}
+
+.af-label input:focus,
+.af-label select:focus {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.1);
+  background: white;
+}
+
+.af-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.af-password-wrap {
+  position: relative;
+}
+
+.af-password-wrap input {
+  padding-right: 70px;
+}
+
+.af-toggle-visibility {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #1677ff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.af-strength {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 7px;
+}
+
+.af-strength-bar {
+  height: 5px;
+  flex: 1;
+  overflow: hidden;
+  background: #e8ecf1;
+  border-radius: 20px;
+}
+
+.af-strength-fill {
+  height: 100%;
+  background: #1677ff;
+  border-radius: inherit;
+  transition: width 0.25s;
+}
+
+.af-strength span {
+  min-width: 65px;
+  color: #737b88;
+  font-size: 10px;
+}
+
+.af-checkbox-inline {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #737b88;
+  font-size: 11px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.af-checkbox-inline input {
+  margin-top: 2px;
+  accent-color: #1677ff;
+}
+
+.af-error {
+  padding: 10px 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  background: #fff0f1;
+  color: #b4232b;
+  font-size: 12px;
+}
+
+.af-submit {
+  width: 100%;
+  border: 0;
+  padding: 13px;
+  margin-top: 15px;
+  border-radius: 9px;
+  background: #1677ff;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.af-submit:hover {
+  background: #0b5ed7;
+}
+
+.af-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.af-switch {
+  text-align: center;
+  color: #737b88;
+  font-size: 12px;
+}
+
+.af-link-btn {
+  border: 0;
+  background: transparent;
+  color: #1677ff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .af-two-column {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
